@@ -102,7 +102,7 @@ export const getSanitizedConfig = (
         ) || [],
       educations:
         config?.educations?.filter(
-          (item) => item.institution || item.degree || item.from || item.to || item.honors,
+          (item) => item.institution || item.degree || item.from || item.to,
         ) || [],
       publications: config?.publications?.filter((item) => item.title) || [],
       googleAnalytics: {

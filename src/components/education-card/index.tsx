@@ -6,12 +6,10 @@ const ListItem = ({
   time,
   degree,
   institution,
-  honors,
 }: {
   time: React.ReactNode;
   degree?: React.ReactNode;
   institution?: React.ReactNode;
-  honors?: React.ReactNode;
 }) => (
   <li className="mb-5 ml-4">
     <div
@@ -78,7 +76,6 @@ const EducationCard = ({
                     time={`${item.from} - ${item.to}`}
                     degree={item.degree}
                     institution={item.institution}
-                    honors={item.honors}
                   />
                 ))}
               </>

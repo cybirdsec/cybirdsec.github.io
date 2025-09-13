@@ -29,21 +29,21 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Wazuh VM Lab',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Documentation for setting up a virtualized instance of Wazuh on an Ubuntu Server VM',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://github.com/cybirdsec/Wazuh-VM-Lab',
         },
         {
-          title: 'Project Name',
+          title: 'Virtual VLC Media Server',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'A VLC-based media server with content retrieval, scheduling, and streaming automated through cron jobs.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
@@ -51,11 +51,11 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Nicholas Blanchard', description: '', imageURL: '' },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: '',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -65,34 +65,34 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'nicholas.blanchard@proton.me',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
     'Docker',
-    'PHPUnit',
+    'Linux (Arch, Ubuntu, Debian, Kali)',
+    'Wireshark',
+    'Hashcat',
+    'Burp Suite',
+    'Bash',
+    'Active Directory',
+    'Virtualization',
+    'Wazuh',
+    'DHCP',
+    'DNS',
+    'PC Building/Repair',
+    'HTML',
     'CSS',
-    'Antd',
-    'Tailwind',
   ],
   experiences: [
     {
@@ -112,24 +112,19 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'CompTIA Security+',
+      body: 'The CompTIA Security+ certification is a global certification exam that validates the baseline skills needed to perform core security functions.',
+      year: 'September 2025',
+      link: 'https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=H335CSW1FNR4K39J',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Middle Georgia State University',
+      degree: 'B.S. in Information Technology - Cybersecurity',
+      from: '2021',
+      to: '2025',
+      honors: 'President List Scholar, Summa Cum Laude'
     },
   ],
   publications: [
@@ -153,18 +148,19 @@ const CONFIG = {
     },
   ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+ // blog: {
+  //  source: 'dev', // medium | dev
+  //  username: 'arifszn', // to hide blog section, keep it empty
+ //   limit: 2, // How many articles to display. Max is 10.
+ // },
+//
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'dark',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode

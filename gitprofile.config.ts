@@ -14,9 +14,9 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
@@ -25,28 +25,20 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['cybirdsec/Wazuh-VM-Lab', 'cybirdsec/Virtual-VLC-Media-Server'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'Projects',
+      header: 'External Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Wazuh VM Lab',
+          title: 'MGA Student Web Forum',
           description:
-            'Documentation for setting up a virtualized instance of Wazuh on an Ubuntu Server VM',
+            'An alternative to the appointment-based tutoring system, GRAIL is an online forum for students to ask and answer homework questions anytime, anywhere. I primarily contributed to the CSS design of the site. Credit for the JavaScript goes to Elizabeth Zakula.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/cybirdsec/Wazuh-VM-Lab',
-        },
-        {
-          title: 'Virtual VLC Media Server',
-          description:
-            'A VLC-based media server with content retrieval, scheduling, and streaming automated through cron jobs.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://github.com/elizabethz61/GRAIL',
         },
       ],
     },
@@ -94,7 +86,7 @@ const CONFIG = {
     'HTML',
     'CSS',
   ],
-  experiences: [
+  /* experiences: [
     {
       company: 'Company Name',
       position: 'Position',
@@ -110,6 +102,7 @@ const CONFIG = {
       companyLink: 'https://example.com',
     },
   ],
+*/
   certifications: [
     {
       name: 'CompTIA Security+',
@@ -124,7 +117,6 @@ const CONFIG = {
       degree: 'B.S. in Information Technology - Cybersecurity',
       from: '2021',
       to: '2025',
-      honors: 'President List Scholar, Summa Cum Laude'
     },
   ],
  // publications: [
@@ -160,11 +152,11 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'dracula',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
